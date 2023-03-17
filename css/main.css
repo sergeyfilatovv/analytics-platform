@@ -774,7 +774,7 @@ body {
 @media (max-width: 576px) {
   .illustration-info__shadow-img {
     bottom: -6px;
-    right: 30px;
+    right: 10px;
   }
 }
 
@@ -901,8 +901,8 @@ body {
 }
 @media (max-width: 576px) {
   .illustration-info__duty {
-    top: 211px;
-    right: -31px;
+    top: 71px;
+    left: 5px;
     z-index: 1;
   }
 }
@@ -1367,4 +1367,5 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
 /*# sourceMappingURL=main.css.map */
