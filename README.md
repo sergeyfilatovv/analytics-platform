@@ -1,3 +1,4 @@
+https://sergeyfilatovv.github.io/analytics-platform/
 <ul>
     <li>Вёрстка analytics-platform</li>
     <li>Свёрстано с использованием методологии БЭМ.</li>
