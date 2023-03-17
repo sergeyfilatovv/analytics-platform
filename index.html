@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test-project</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/Chart.min.css">
+        <link rel="stylesheet" href="./css/swiper-element-bundle.min.css">
+        <link rel="stylesheet" href="./css/swiper-element.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <div class="container">
+                <div class="header__nav">
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__line"><a href="#" class="navigation__link">Главная</a></li>
+                            <li class="navigation__line"><a href="#" class="navigation__link">Продукты</a></li>
+                            <li class="navigation__line"><a href="#" class="navigation__link">Кейсы</a></li>
+                            <li class="navigation__line"><a href="#" class="navigation__link">Экспертные мнения</a></li>
+                            <li class="navigation__line"><a href="#" class="navigation__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="button">Запросить презентацию</button>
+                    <!-- mobile-nav-button -->
+                    <div class="mobile-nav-button none">
+                        <div class="mobile-nav-button__item"></div>
+                        <div class="mobile-nav-button__item"></div>
+                        <div class="mobile-nav-button__item"></div>
+                    </div>
+                    <!--// mobile-nav-button -->
+                </div>
+                <div class="header__logo">
+                    <img class="header__img" src="./img/header/icons/icon-logo.svg" alt="logo">
+                </div>
+                <div class="header__block">
+                    <div class="header__wrapper">
+                        <h1 class="header__title">AI-Driven Analytics Platform</h1>
+                    </div>
+                    <div class="header__row">
+                        <div class="card card--big">
+                            <div class="card__circle card__circle--big">
+                                <img src="./img/icons/data-icon.svg" alt="data" class="card__img">
+                            </div>
+                            <div class="card__info">
+                                <h2 class="card__title card__title--big">Обработка данных</h2>
+                                <p>Мы помогаем клиентам подобрать необходимые источники данных (через Pop UP нужно показать логотипы: Все ОФД, Nielsen, Едадил, СкидкиОнлайн). Валидируем и верифицируем их. Приводим их к единому формату и классификатору. </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__circle">
+                                <img src="./img/icons/analysis-icon.svg" alt="analysis" class="card__img"> 
+                            </div>
+                            <div class="card__info">
+                                <h2 class="card__title">Анализ</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__circle">
+                                <img src="./img/icons/visualization-icon.svg" alt="visualization" class="card__img">
+                            </div>
+                            <div class="card__info">
+                                <h2 class="card__title">Визуализация</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__circle">
+                                <img src="./img/icons/interpretation-icon.svg" alt="interpretation" class="card__img">
+                            </div>
+                            <div class="card__info">
+                                <h2 class="card__title">Интерпретация</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__gradient"></div>
+        </section>
+        <section class="information">
+            <div class="container">
+                <div class="information__row">
+                    <div class="chart">
+                        <div class="chart__title">
+                            <h3 class="title">Промо-давление увеличивается</h3>
+                        </div>
+                        <div class="information__chart">
+                            <canvas class="myChart" id="myChart"></canvas>
+                        </div>
+                        <div class="chart__wrapper">
+                            <button class="button button--edit">Почему увеличивается?</button>
+                        </div>
+                    </div>
+                    <div class="illustration-info">
+                        <div class="illustration-info__title">
+                            <h3 class="title">80% данных не используется производителями</h3>
+                        </div>
+                        <div class="illustration-info__wrapper">
+                            <img class="illustration-info__diagramm-img" src="./img/information/diagramm-img.svg" alt="diagramm">
+                            <img class="illustration-info__men-img" src="./img/information/men-img.png" alt="men">
+                            <img class="illustration-info__shadow-img" src="./img/information/shadow-img.png" alt="shadow">
+                            <div class="illustration-info__charge">
+                                <div class="illustration-info__item illustration-info__item--active">
+                                    <div class="illustration-info__inner-item"></div>
+                                </div>
+                                <button class="button button--black">Налог на ввоз </button>
+                            </div>
+                            <div class="illustration-info__expenses">
+                                <div class="illustration-info__item illustration-info__item--active">
+                                    <div class="illustration-info__inner-item"></div>
+                                </div>
+                                <button class="button button--black">Расходы</button>
+                            </div>
+                            <div class="illustration-info__profit">
+                                <div class="illustration-info__item illustration-info__item--active">
+                                    <div class="illustration-info__inner-item"></div>
+                                </div>
+                                <button class="button button--black">Прибыль</button>
+                            </div>
+                            <div class="illustration-info__increase">
+                                <div class="illustration-info__item illustration-info__item--active">
+                                    <div class="illustration-info__inner-item"></div>
+                                </div>
+                                <button class="button button--black">Закупка</button>
+                            </div>
+                            <div class="illustration-info__purchase">
+                                <div class="illustration-info__item illustration-info__item--active">
+                                    <div class="illustration-info__inner-item"></div>
+                                </div>
+                                <button class="button button--black">Надбавка №2</button>
+                            </div>
+                            <div class="illustration-info__duty">
+                                <div class="illustration-info__item illustration-info__item--active">
+                                    <div class="illustration-info__inner-item"></div>
+                                </div>
+                                <button class="button button--black">Пошлина в такую-то </br>  структуру</button>
+                            </div>
+                            <div class="illustration-info__sales">
+                                <div class="illustration-info__item illustration-info__item--active">
+                                    <div class="illustration-info__inner-item"></div>
+                                </div>
+                                <button class="button button--black">Продажи</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="data-info">
+                    <div class="data-info__title">
+                        <h3 class="title">Собираем и обрабатываем гранулярные данные на уровне сети</h3>
+                    </div>   
+                </div>
+                <div class="swiper swiper-container">
+                    <div class="swiper-wrapper">    
+                        <div class="swiper-slide">
+                            <div class="data-info__row">
+                                <div class="data-processing">
+                                    <div class="data-processing__title">
+                                        <h4 class="title title--edit">Обработка данных</h4>
+                                        <span class="text">1</span>
+                                    </div>
+                                    <ul class="data-processing__list">
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/analysis-icon.svg" alt="bag" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Мы используем точные алгоритм и машинное обучение
+                                            </div>
+                                        </li>
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/data-icon.svg" alt="data" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Консолидируем, проверяем, визуализируем и интерпретируем информацию.
+                                            </div>
+                                        </li>
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/bag-icon.svg" alt="bag" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Разрабатываем рекомендации для эффективной промо-стратегии и тактических решений
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="data-transformation">
+                                    <div class="data-transformation__title">
+                                        <h4 class="title title--edit">Преобразование данных</h4>
+                                        <span class="text">2</span>
+                                    </div>
+                                    <ul class="data-transformation__list">
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Ежемесячные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Еженедельные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Сырые данные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Промо/регулярные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Промо/регулярные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img data-transformation__img--edit">
+                                            </div>
+                                            <span class="data-transformation__element">Базовые/Инкрементальные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Дистрибуция</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Конкретное окружение</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="data-info__row">
+                                <div class="data-processing">
+                                    <div class="data-processing__title">
+                                        <h4 class="title title--edit">Обработка данных</h4>
+                                        <span class="text">1</span>
+                                    </div>
+                                    <ul class="data-processing__list">
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/analysis-icon.svg" alt="bag" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Мы используем точные алгоритм и машинное обучение
+                                            </div>
+                                        </li>
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/data-icon.svg" alt="data" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Консолидируем, проверяем, визуализируем и интерпретируем информацию.
+                                            </div>
+                                        </li>
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/bag-icon.svg" alt="bag" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Разрабатываем рекомендации для эффективной промо-стратегии и тактических решений
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="data-transformation">
+                                    <div class="data-transformation__title">
+                                        <h4 class="title title--edit">Преобразование данных</h4>
+                                        <span class="text">2</span>
+                                    </div>
+                                    <ul class="data-transformation__list">
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Ежемесячные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Еженедельные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Сырые данные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Промо/регулярные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Промо/регулярные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img data-transformation__img--edit">
+                                            </div>
+                                            <span class="data-transformation__element">Базовые/Инкрементальные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Дистрибуция</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Конкретное окружение</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="data-info__row">
+                                <div class="data-processing">
+                                    <div class="data-processing__title">
+                                        <h4 class="title title--edit">Обработка данных</h4>
+                                        <span class="text">1</span>
+                                    </div>
+                                    <ul class="data-processing__list">
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/analysis-icon.svg" alt="bag" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Мы используем точные алгоритм и машинное обучение
+                                            </div>
+                                        </li>
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/data-icon.svg" alt="data" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Консолидируем, проверяем, визуализируем и интерпретируем информацию.
+                                            </div>
+                                        </li>
+                                        <li class="data-processing__line">
+                                            <div class="data-processing__circle">
+                                                <img src="./img/icons/bag-icon.svg" alt="bag" class="data-processing__img">
+                                            </div> 
+                                            <div class="data-processing__description">
+                                                Разрабатываем рекомендации для эффективной промо-стратегии и тактических решений
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="data-transformation">
+                                    <div class="data-transformation__title">
+                                        <h4 class="title title--edit">Преобразование данных</h4>
+                                        <span class="text">2</span>
+                                    </div>
+                                    <ul class="data-transformation__list">
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Ежемесячные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Еженедельные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Сырые данные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Промо/регулярные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Промо/регулярные</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img data-transformation__img--edit">
+                                            </div>
+                                            <span class="data-transformation__element">Базовые/Инкрементальные</span>
+                                        </li>
+                                        <li class="data-transformation__line">
+                                            <div class="data-transformation__wrapper">
+                                                <span class="data-transformation__element">Дистрибуция</span><img src="./img/icons/arrow-icon.svg" alt="arrow" class="data-transformation__img">
+                                            </div>
+                                            <span class="data-transformation__element">Конкретное окружение</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                        <div class="swiper-pagination-bullet swiper-pagination-bullet-active"></div>
+                        <div class="swiper-pagination-bullet"></div>
+                        <div class="swiper-pagination-bullet"></div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+            <img  src="./img/icons/background-icon.svg" alt="background" class="information__background-img">
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

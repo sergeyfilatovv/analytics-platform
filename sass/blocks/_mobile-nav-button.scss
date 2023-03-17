@@ -1,0 +1,30 @@
+.mobile-nav-button {
+/* Tablet */
+@media (max-width: 1199px) {
+    display: flex;
+    column-gap: 5px;
+}
+
+}
+
+.mobile-nav-button__item {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+
+    &::before{
+        content:'';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #E01E2E;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+         
+    }
+}

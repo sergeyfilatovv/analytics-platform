@@ -1,0 +1,22 @@
+// base
+@import "./base/reset";
+@import "./base/base";
+@import "./base/fonts";
+
+// sections
+@import "./sections/header";
+@import "./sections/information";
+
+// blocks
+@import "./blocks/navigation";
+@import "./blocks/card";
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/text";
+@import "./blocks/illustration-info";
+@import "./blocks/data-transformation";
+@import "./blocks/chart";
+@import "./blocks/data-info";
+@import "./blocks/mobile-nav-button";
+
+

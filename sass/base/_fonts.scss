@@ -1,0 +1,30 @@
+// Regular
+@font-face {
+    font-family: 'PF Agora Sans Pro';
+    src: local('PF Agora Sans Pro Regular'), local('PF-Agora-Sans-Pro-Regular'),
+        url('../fonts/PFAgoraSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/PFAgoraSansPro-Regular.woff') format('woff'),
+        url('../fonts/PFAgoraSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+// Bold
+@font-face {
+    font-family: 'PF Agora Sans Pro';
+    src: local('PF Agora Sans Pro Bold'), local('PF-Agora-Sans-Pro-Bold'),
+        url('../fonts/PFAgoraSansPro-Bold.woff2') format('woff2'),
+        url('../fonts/PFAgoraSansPro-Bold.woff') format('woff'),
+        url('../fonts/PFAgoraSansPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+// Extra Bold
+  @font-face {
+    font-family: 'PF Agora Sans Pro';
+    src: local('PF Agora Sans Pro UltraBlack'), local('PF-Agora-Sans-Pro-UltraBlack'),
+        url('../fonts/PFAgoraSansPro-UltraBlack.woff2') format('woff2'),
+        url('../fonts/PFAgoraSansPro-UltraBlack.woff') format('woff'),
+        url('../fonts/PFAgoraSansPro-UltraBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }

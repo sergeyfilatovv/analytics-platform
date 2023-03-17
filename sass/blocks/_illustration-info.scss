@@ -1,0 +1,252 @@
+.illustration-info__title {
+    margin-bottom: 40px;
+    width: 523px;
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        width: 290px;
+    }
+
+    
+}
+.illustration-info__wrapper {
+    width: 596px;
+    height: 596px;
+    position: relative;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        width: 545px;
+        
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        width: 290px;
+        height: 360px;
+    }
+    
+    
+}
+
+.illustration-info__diagramm-img{
+    position: absolute;
+    z-index: -2;
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        width: 290px;
+
+    }
+    
+}
+
+.illustration-info__men-img{
+    position: absolute;
+    left: 50%;
+    top: 49px;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none;
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        width: 394px;
+        height: 494px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        width: 204px;
+        height: 284px;
+    }
+}
+
+.illustration-info__shadow-img{
+    position: absolute;
+    bottom: -40px;
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        bottom: 0px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        bottom: -6px;
+        right: 30px;
+        
+    }
+}
+
+.illustration-info__charge,.illustration-info__expenses,.illustration-info__profit,.illustration-info__purchase,.illustration-info__increase,.illustration-info__duty,.illustration-info__sales {
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        column-gap: 4px;
+    }
+}
+
+.illustration-info__charge{
+   top: 24px; 
+   left: 148px;
+
+   /* Mobile */
+   @media (max-width: 768px) {
+    left: 130px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        left: 43px;
+    }
+    
+}
+
+.illustration-info__expenses{
+    top: 74px;
+    right: 143px;
+    /* Mobile */
+   @media (max-width: 768px) {
+    right: 103px;
+    }
+
+      /* Mobile XS */
+      @media (max-width: 576px) {
+        right: 47px;
+    }
+}
+
+.illustration-info__profit{
+    top: 129px;
+    right: -42px;
+    /* Mobile */
+   @media (max-width: 768px) {
+    right: -52px;
+    }
+
+     /* Mobile XS */
+     @media (max-width: 576px) {
+        right: 12px;
+    }
+}
+
+.illustration-info__purchase{
+    top: 263px;
+    right: 47px;
+    z-index: 1;
+    pointer-events: visible;
+
+    /* Mobile */
+   @media (max-width: 768px) {
+    right: 37px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        top: 173px;
+        right: 3px;
+    }
+}
+
+.illustration-info__increase{
+    top: 200px;
+    left: 82px;
+    /* Mobile */
+   @media (max-width: 768px) {
+    left: 67px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        top: 120px;
+        left: 30px;
+        z-index: 1;
+    }
+    
+}
+
+.illustration-info__duty{
+    top: 331px;
+    right: -63px;
+
+     /* Mobile */
+   @media (max-width: 768px) {
+    right: -60px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        top: 211px;
+        right: -31px;
+        z-index: 1;
+    }
+}
+
+.illustration-info__sales{
+    top: 357px;
+    left: 2px;
+
+     /* Mobile */
+   @media (max-width: 768px) {
+    left: 11px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        top: 190px;
+        left: 5px;
+        z-index: 1;
+    }
+}
+
+
+
+.illustration-info__item {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.illustration-info__inner-item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E01E2E;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+    /* Mobile XS */
+    @media (max-width: 576px) {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.illustration-info__item--active {
+    border: 1px solid #E01E2E;
+}
+
+
+

@@ -1,0 +1,102 @@
+.card {
+    width: 180px;
+    height: 167px;
+    padding: 25px 10px 20px 10px;
+    border-radius: 20px;
+
+    background: rgba(196, 196, 196, 0.2);
+    border: 2px solid rgba(100, 100, 100, 0.33);
+    backdrop-filter: blur(10px);
+
+    
+}
+
+.card__info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
+}
+
+
+.card--big {
+    background-image: url(../../img/card/card-bg.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 600px;
+    height: 325px;
+    padding: 25px 25px 54px 25px ;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 180px;
+        height: 167px;
+    }
+
+}
+
+.card--big p{
+    /* Tablet */
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.card__circle.card__circle--big{
+    width: 93px;
+    height: 93px;
+    margin-left: 0px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 73px;
+        height: 73px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+    }
+}
+
+
+.card__title.card__title--big{
+    text-align: left;
+    margin-bottom: 15px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+
+.card__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+   
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+
+    background: #E01E2E;
+   
+}
+

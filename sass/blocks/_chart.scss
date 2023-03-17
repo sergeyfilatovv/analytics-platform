@@ -1,0 +1,28 @@
+.chart__title {
+    width: 299px;
+    margin-bottom: 40px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+     /* Mobile XS */
+     @media (max-width: 576px) {
+        width: 290px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+.chart__wrapper{
+    display: flex;
+    justify-content: center;
+}

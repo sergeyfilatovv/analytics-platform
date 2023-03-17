@@ -1,0 +1,28 @@
+body{
+    font-family: 'PF Agora Sans Pro';
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 767px;
+    }
+    /* Mobile */
+    @media (max-width: 768px) {
+        width: 575px;
+    }
+     /* Mobile XS */
+     @media (max-width: 576px) {
+        width: 320px;
+
+     }
+}
+
+.none{
+    display: none;
+}
